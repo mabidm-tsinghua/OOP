@@ -2,10 +2,50 @@
 //
 
 #include <iostream>
+#include <iomanip>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int baseSalary;
+    int noOfServiceYears;
+    int bonus;
+    int additionalBonus;
+    int totalSale;
+    int payCheck;
+
+    cout << "Plz enter base salary and no of service years: ";
+    cin >> baseSalary >> noOfServiceYears;
+    cout << "Enter total Sales: ";
+    cin >> totalSale;
+    
+
+
+    //
+    if (noOfServiceYears <= 5) {
+        bonus = 0.1 * baseSalary;
+    }else {
+        bonus = 0.2 * baseSalary;
+    }
+    if (totalSale < 5000) {
+        additionalBonus = 0;
+    }
+    else if (totalSale >= 5000 && totalSale < 10000) {
+        additionalBonus = 0.03 * totalSale;
+    }
+    else {
+        additionalBonus = 0.06 * totalSale;
+    }
+
+    payCheck = baseSalary + bonus + additionalBonus;
+    cout << "Total Salary: "<<payCheck
+        <<",with bonus: "<<bonus
+        <<",additional bonus: "<<additionalBonus<<endl;
+        
+    
+  
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

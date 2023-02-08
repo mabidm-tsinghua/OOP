@@ -5,7 +5,12 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    unsigned int i = 4294967295;
+    int ii = -1;
+    std::cout << i << " " << ii << " " << (i == ii) << std::endl;
+    i = 2147483648;
+    ii = -2147483648;
+    std::cout << i << " " << ii << " " << (i == ii) << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

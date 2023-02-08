@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e3a264a4-6645-4af2-9159-30ed0ab8db18}</ProjectGuid>
-    <RootNamespace>Chapter01</RootNamespace>
+    <ProjectGuid>{426e859e-0cd2-4247-8d74-51ce082cd3a9}</ProjectGuid>
+    <RootNamespace>fractionAccuracy</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Chapter01.cpp" />
+    <ClCompile Include="fractionAccuracy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
