@@ -11,6 +11,10 @@ int main()
     i = 2147483648;
     ii = -2147483648;
     std::cout << i << " " << ii << " " << (i == ii) << std::endl;
+    i = 2;
+    ii = -1;
+    std::cout << i << " " << ii << " " << ( ii < i) << std::endl;
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
