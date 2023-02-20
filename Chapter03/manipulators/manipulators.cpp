@@ -58,10 +58,27 @@ void hextinput() {
 }
 
 void printFloat() {
-    double d = 2.00;
-    cout << "d=2: " << d << endl;
-    
-    cout<< setprecision(8) <<noshowpoint<< "with showpoint d=2: " << d << endl;
+    double d = 15.00;
+    cout << "d=15.00: " << d << endl;
+    //show decimal point with trailing 0s.
+    cout<< showpoint<< "with showpoint d=15.00: " << d << endl;//disable noshowpoint
+    double hours = 35.45;
+    double rate = 15.00;
+    double tolerance = 0.01000;
+    cout <<noshowpoint<< "hours = " << hours << ", rate = " << rate
+        << ", pay = " << hours * rate
+        << ", tolerance = " << tolerance << endl << endl;
+    cout << scientific;
+    cout << "Scientific notation: " << endl;
+    cout << "hours = " << hours << ", rate = " << rate
+        << ", pay = " << hours * rate
+        << ", tolerance = " << tolerance << endl << endl;
+    cout << fixed; //print fixed number of digits after decimal point
+    cout << "Fixed decimal notation: " << endl;
+    cout << "hours = " << hours << ", rate = " << rate
+        << ", pay = " << hours * rate
+        << ", tolerance = " << tolerance << endl << endl;
+
 
 }
 

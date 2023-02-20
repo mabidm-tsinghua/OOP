@@ -58,8 +58,8 @@ bool input2() {
 
 int main()
 {
-    input1();
-    //input2();
+    //input1();
+    input2();
 
     return 0;
 }

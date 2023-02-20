@@ -3,6 +3,8 @@
 using namespace std;
 
 int main() {
+	char n[10] = {'a','b','i','d'};
+	cout << n;
 	int a, b;
 	double z;
 	char ch;
